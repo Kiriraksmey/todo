@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+<form class="login"  th:action="@{/login-page/login}" th:object="${user}" method="post" >
+    <input type="text" placeholder="Username"  th:field="@{username}" >
+    <input type="password" placeholder="Password" th:field="@{password}">
+    <button>Login</button>
+</form>
+</body>
+</html>
